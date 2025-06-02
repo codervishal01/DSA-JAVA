@@ -17,7 +17,7 @@ public class stocksProfit {
     }
 
     public static void main(String args[]) {
-        int price[] = { 7, 1, 5, 3, 6, 4 };
+        int price[] = { 7, 1, 5, 3, 6, 3 };
         System.out.println("Maximum Profit: " + maxProfit(price));
     }
 }
