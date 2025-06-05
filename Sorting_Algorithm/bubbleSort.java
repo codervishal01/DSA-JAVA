@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class bubbleSort {
 
     public static void bubbleSorting(int nums[]) {
@@ -27,3 +25,4 @@ public class bubbleSort {
         printnums(nums);
     }
 }
+ 
