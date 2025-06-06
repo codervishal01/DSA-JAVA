@@ -1,3 +1,5 @@
+package Sorting_Algorithm;
+
 public class InsertionSort {
 
     public static void insertionSorting(int arr[]) {
