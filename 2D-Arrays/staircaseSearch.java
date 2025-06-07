@@ -1,33 +1,53 @@
 
 public class staircaseSearch {
 
-    public static boolean staircaseSearch(int matrix[][],int key){
-        int row=0;
-        int col=matrix[0].length-1;
+    public static boolean staircaseSearch(int matrix[][], int key) {
+        // //by taking initial index of top right corner
 
-        while(row<matrix.length && col>=0){
-            if(matrix[row][col]==key){
-                System.out.println("key is found at "+row+","+col);
+        // int row=0;
+        // int col=matrix[0].length-1;
+
+        // while(row<matrix.length && col>=0){
+        // if(matrix[row][col]==key){
+        // System.out.println("key is found at "+row+","+col);
+        // return true;
+        // }
+        // if(matrix[row][col]>key){
+        // col--;
+        // }else{
+        // row++;
+        // }
+        // }
+        // System.out.print("key not foundin matrix");
+        // return false;
+        // }
+
+
+        // by taking intial index of boottom left corner
+        int row = matrix.length - 1;
+        int col = 0;
+        while (row < matrix.length && col >= 0) {
+            if (matrix[row][col] == key) {
+                System.out.println("key is found at " + row + "," + col);
                 return true;
-            }
-            if(matrix[row][col]>key){
-                col--;
-            }else{
-                row++;
+            } else if (key < matrix[row][col]) {
+                row--;
+            } else {
+                col++;
             }
         }
-        System.out.print("key not foundin matrix");
+        System.out.print("Key not found in matrices");
         return false;
     }
-        
-    public static void main(String args[]){
-    int matrix[][] = {
+
+    public static void main(String args[]) {
+        int matrix[][] = {
                 { 10, 20, 30, 40 },
                 { 15, 25, 35, 45 },
                 { 27, 29, 37, 40 },
                 { 32, 33, 39, 50 }
-            };
-      int key=33;
-      staircaseSearch(matrix, key);
-  }
+        };
+        int key = 39;
+        staircaseSearch(matrix, key);
+    }
 }
