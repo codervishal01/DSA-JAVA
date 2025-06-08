@@ -21,6 +21,7 @@ public class substring {
     public static void main(String args[]){
         String str="HelloWorld";
         System.out.print(subString(str,0,5));
-
+        //inbuilt substring 
+        // System.out.print(str.substring(0,5));
     }
 }
