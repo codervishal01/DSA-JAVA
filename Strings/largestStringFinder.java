@@ -1,4 +1,5 @@
-public class LargestStringFinder {
+
+public class largestStringFinder {
     
     public static void printLargestString(String[] arr) {
         if (arr == null || arr.length == 0) {
