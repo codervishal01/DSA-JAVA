@@ -9,7 +9,9 @@ public class stringCompression {
                 i++;
             }
             sb.append(str.charAt(i));
+            if(count>1){
             sb.append(count.toString());
+        }
         }
         return sb.toString();
     }
