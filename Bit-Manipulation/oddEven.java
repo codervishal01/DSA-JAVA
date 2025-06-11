@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class oddEven{
-    public static boolean oddEven(int num){
+    public static boolean oddEven(int n){
         int bitMask=1;
-        if ((num & bitMask) == 0) {
+        if ((n& bitMask) == 0) {
             System.out.print("even");
             return true;
         } else {
@@ -13,7 +13,7 @@ public class oddEven{
     }
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
-        int num = sc.nextInt();
-        oddEven(num);
+        int n = sc.nextInt();
+        oddEven(n);
     }
 }
