@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class clearithBit {
-    
+
     public static int clearithBit(int ith, int num) {
         int bitMask = ~(1 << ith);
         return num & bitMask;
@@ -15,6 +15,3 @@ public class clearithBit {
         System.out.print(clearithBit(ith, num));
     }
 }
-
-
-
