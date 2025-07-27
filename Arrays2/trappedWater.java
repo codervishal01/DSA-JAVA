@@ -32,5 +32,3 @@ public class trappedWater {
     public static void main(String args[]) {
         int height[] = { 4, 2, 0, 6, 3, 2, 5 };
         System.out.println("Total Trapped Water: " + calTrappedWater(height));
-    }
-}
