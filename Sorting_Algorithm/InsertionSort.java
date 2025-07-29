@@ -1,5 +1,3 @@
-package Sorting_Algorithm;
-
 public class InsertionSort {
 
     public static void insertionSorting(int arr[]) {
@@ -18,6 +16,7 @@ public class InsertionSort {
             arr[j + 1] = current;
         }
     }
+
 
     //  print the array
     public static void printArray(int arr[]) {

@@ -1,4 +1,3 @@
-package Sorting_Algorithm;
 
 public class selectionSort {
     public static void selectionSorting(int arr[]) {
