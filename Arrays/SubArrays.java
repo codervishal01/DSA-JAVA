@@ -9,9 +9,9 @@ public class SubArrays {
                     System.out.print(numbers[k]+" ");
         
                 }
+                ts++;
                 System.out.println();
             }
-            ts++;
             System.out.println();
         }
         System.out.print("total subarrays : " + ts);
